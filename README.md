@@ -108,4 +108,20 @@ dbt Seeds allow you to load small, static CSV files into your database. This is 
 - The CSV data becomes a table in your database.
 - Use it in models just like any other table.
 
+Create a CSV File (`categories.csv`) in seeds/ directory
+
+```csv
+id,name,type
+1,Electronics,Gadgets
+2,Furniture,Home
+3,Clothing,Fashion
+4,Books,Education
+```
+
+Run dbt seed
+
+```bash
+dbt seed
+```
+This loads categories.csv into the database as a table name `categories`.
 
