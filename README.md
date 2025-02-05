@@ -125,3 +125,10 @@ dbt seed
 ```
 This loads categories.csv into the database as a table name `categories`.
 
+```bash
+dbt seed --full-refresh
+```
+--full-refresh ensures that the old incorrect table is dropped and replaced with the corrected CSV data.
+
+
+
