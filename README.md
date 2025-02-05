@@ -42,6 +42,22 @@ dbt debug
 
 ### 3️⃣ Run Your First dbt Model
 
+🔹 Config Block:
+```sql
+{{ config(materialized='table') }}
+```
+- This tells dbt how to store the results.
+- materialized='table' means dbt will create a table in the database.
+
+You can change it to view to create a view instead:
+
+```sql
+{{ config(materialized='view') }}
+```
+
+- Table: Stores data physically (faster queries, but takes up storage).
+- View: Stores only the SQL logic (faster updates, but queries may be slower).
+
 ```sql
 SELECT id, name, email
 FROM your_source_table
