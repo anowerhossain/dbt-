@@ -27,24 +27,19 @@ dbt --version
 ```bash
 dbt init reve_dbt
 ```
+🔹 File Structure
 
-reve_dbt/
-
-│── dbt_project.yml
-
-│── models/
-
-│   ├── example/
-
-│   │   ├── my_first_dbt_model.sql
-
-│   │   ├── my_second_dbt_model.sql
-
-│── seeds/
-
-│── macros/
-│── tests/
-
+```bash
+my_first_project/
+│── dbt_project.yml      # Main dbt project configuration file
+│── models/              # Stores SQL transformation models
+│   ├── example/         # Example models directory
+│   │   ├── my_first_dbt_model.sql   # First dbt model
+│   │   ├── my_second_dbt_model.sql  # Second dbt model
+│── seeds/               # CSV files for seeding data into dbt
+│── macros/              # Custom macros (reusable SQL functions)
+│── tests/               # Custom tests for data validation
+```
 
 🔹 Navigate into the project folder:
 
