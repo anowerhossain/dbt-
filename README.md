@@ -22,14 +22,28 @@ dbt --version
 
 ### 2️⃣ Initialize a New dbt Project
 
-Create a new dbt project by running
+🔹 Create a new dbt project by running
 
 ```bash
 dbt init reve_dbt
 ```
 
-Navigate into the project folder:
+🔹 Navigate into the project folder:
 
 ```bash
 cd reve_dbt
 ```
+
+🔹 Test the Connection
+
+```bash
+dbt debug
+```
+
+### 3️⃣ Run Your First dbt Model
+
+```sql
+SELECT id, name, email
+FROM your_source_table
+```
+
