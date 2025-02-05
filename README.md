@@ -99,3 +99,13 @@ dbt test
 ```bash
 dbt test --select my_first_dbt_model
 ```
+
+### 🌱 Understanding dbt Seeds (`dbt seed`)
+dbt Seeds allow you to load small, static CSV files into your database. This is useful for reference data, mapping tables, or small datasets that don’t change often.
+
+- Place CSV files inside the seeds/ directory.
+- Run dbt seed to load them into the database.
+- The CSV data becomes a table in your database.
+- Use it in models just like any other table.
+
+
