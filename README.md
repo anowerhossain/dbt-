@@ -63,3 +63,12 @@ SELECT id, name, email
 FROM your_source_table
 ```
 
+### 4️⃣ Run this model using
+
+```
+dbt run
+```
+
+- If this file is named my_first_dbt_model.sql, the result will be stored in the database as:
+🔹 A table (my_schema.my_first_dbt_model)
+🔹 A view (my_schema.my_second_dbt_model)
