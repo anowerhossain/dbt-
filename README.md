@@ -29,12 +29,19 @@ dbt init reve_dbt
 ```
 
 reve_dbt/
+
 │── dbt_project.yml
+
 │── models/
+
 │   ├── example/
+
 │   │   ├── my_first_dbt_model.sql
+
 │   │   ├── my_second_dbt_model.sql
+
 │── seeds/
+
 │── macros/
 │── tests/
 
