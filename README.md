@@ -137,6 +137,33 @@ dbt seed
 ```
 This loads categories.csv into the database as a table name `categories`.
 
+- If you have a seed file named customers.csv inside the seeds/ folder, run:
+
+```bash
+dbt seed --select customers
+```
+
+- If you have multiple seed files named customers.csv and orders.csv inside the seeds/ folder, run:
+
+```bash
+dbt seed --select customers orders
+```
+
+- If your seed files are inside a subfolder, for example
+
+```bash
+seeds/
+│── staging/
+│   ├── customers.csv
+│   ├── orders.csv
+│── products.csv
+```
+
+```bash
+dbt seed --select staging.*
+```
+
+
 ```bash
 dbt seed --full-refresh
 ```
