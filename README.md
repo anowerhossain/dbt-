@@ -88,6 +88,18 @@ dbt run
 
 🔹 A view (my_schema.my_second_dbt_model)
 
+- If you want to run only a specific model like my_first_dbt_model.sql
+
+```bash
+dbt run --select my_first_dbt_model
+```
+
+- If you want to run only a specific models pattern like my_*
+
+```bash
+dbt run --select my_*
+```
+
 ### 4️⃣ Run models test using 
 
 - Test all the models
