@@ -163,6 +163,15 @@ seeds/
 dbt seed --select staging.*
 ```
 
+- If your have a sheet in the google sheet and wants to download in the seeds folder with seed name and run the seed to directly move the seed to your database, for example
+
+```bash
+wget -O seeds/my_seed_file.csv "https://docs.google.com/spreadsheets/d/<sheet ID>/export?format=csv&id=<sheet ID>"
+```
+
+```bash
+dbt seed --select my_seed_file
+```
 
 ```bash
 dbt seed --full-refresh
